@@ -1,0 +1,59 @@
+<RCC>
+    <qresource prefix="/">
+        <file>main.qml</file>
+        <file>ui/TabBar/MyTabBar.qml</file>
+        <file>ui/MidArea/MidArea.qml</file>
+        <file>ui/assets/licensing.png</file>
+        <file>ui/assets/rules.png</file>
+        <file>ui/assets/serve.png</file>
+        <file>ui/TabBar/DarkMode.qml</file>
+        <file>ui/TabBar/MyTabs.qml</file>
+        <file>ui/assets/moon2.png</file>
+        <file>ui/assets/about.png</file>
+        <file>ui/MidArea/StartScreen/StartScreen.qml</file>
+        <file>ui/MidArea/RulesArea/RulesArea.qml</file>
+        <file>ui/MidArea/ServeArea/ServeArea.qml</file>
+        <file>ui/MidArea/StandartsArea/StandartsArea.qml</file>
+        <file>ui/MidArea/StartScreen/StartScreenAssets/zoom-in.png</file>
+        <file>ui/MidArea/StartScreen/StartScreenAssets/zoom-out.png</file>
+        <file>ui/MidArea/MidZoom.qml</file>
+        <file>ui/assets/arrow.png</file>
+        <file>ui/MidArea/ServeArea/ServeTexts/Reverse Side Rotation.txt</file>
+        <file>ui/MidArea/ServeArea/ServeAssets/Fan.gif</file>
+        <file>ui/MidArea/ServeArea/ServeAssets/Left Axe.gif</file>
+        <file>ui/MidArea/ServeArea/ServeAssets/Pendulum.gif</file>
+        <file>ui/MidArea/ServeArea/ServeAssets/Reverse Side Rotation.gif</file>
+        <file>ui/MidArea/ServeArea/ServeAssets/Right Axe.gif</file>
+        <file>ui/MidArea/ServeArea/ServeTexts/Pendulum.txt</file>
+        <file>ui/MidArea/ServeArea/ServeTexts/Right Axe.txt</file>
+        <file>ui/MidArea/ServeArea/ServeTexts/Fan.txt</file>
+        <file>ui/MidArea/ServeArea/ServeTexts/Left Axe.txt</file>
+        <file>ui/MidArea/RulesArea/RulesAssets/How long to play a game.jpg</file>
+        <file>ui/MidArea/RulesArea/RulesAssets/How many games are played.jpg</file>
+        <file>ui/MidArea/RulesArea/RulesAssets/How to serve.jpg</file>
+        <file>ui/MidArea/RulesArea/RulesAssets/Other frequent cases on the account game.jpg</file>
+        <file>ui/MidArea/RulesArea/RulesAssets/Requirement for table tennis equipment.jpg</file>
+        <file>ui/MidArea/RulesArea/RulesAssets/Rules for warming up before a meeting.jpg</file>
+        <file>ui/MidArea/RulesArea/RulesTexts/How long to play a game.txt</file>
+        <file>ui/MidArea/RulesArea/RulesTexts/How many games are played.txt</file>
+        <file>ui/MidArea/RulesArea/RulesTexts/How to serve.txt</file>
+        <file>ui/MidArea/RulesArea/RulesTexts/Other frequent cases on the account game.txt</file>
+        <file>ui/MidArea/RulesArea/RulesTexts/Requirement for table tennis equipment.txt</file>
+        <file>ui/MidArea/RulesArea/RulesTexts/Rules for warming up before a meeting.txt</file>
+        <file>ui/MidArea/StandartsArea/StandartsAssets/Ball.jpg</file>
+        <file>ui/MidArea/StandartsArea/StandartsAssets/Racket.jpg</file>
+        <file>ui/MidArea/StandartsArea/StandartsAssets/Room.jpg</file>
+        <file>ui/MidArea/StandartsArea/StandartsAssets/Table.jpg</file>
+        <file>ui/MidArea/StandartsArea/StandartsTexts/Ball.txt</file>
+        <file>ui/MidArea/StandartsArea/StandartsTexts/Racket.txt</file>
+        <file>ui/MidArea/StandartsArea/StandartsTexts/Room.txt</file>
+        <file>ui/MidArea/StandartsArea/StandartsTexts/Table.txt</file>
+        <file>ui/TabBar/BallParticles.qml</file>
+        <file>ui/assets/orange-ball.png</file>
+        <file>ui/assets/white-ball.png</file>
+        <file>ui/TabBar/AboutUs.qml</file>
+        <file>ui/assets/AboutUs.jpg</file>
+        <file>ui/assets/TableTennisWizard Icon.png</file>
+        <file>ui/assets/white single petal.png</file>
+    </qresource>
+</RCC>
