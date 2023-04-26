@@ -33,7 +33,7 @@ Rectangle {
                 anchors.horizontalCenter: serveIcon.horizontalCenter
                 anchors.bottom: parent.bottom
                 anchors.bottomMargin: 5
-                text: qsTr("Serves")
+                text: qsTr("Serves") + mytrans.emptyString
                 color: "white"
                 font.pixelSize: 20
                 font.family: "Impact"
@@ -63,7 +63,7 @@ Rectangle {
                 anchors.horizontalCenter: ruleIcon.horizontalCenter
                 anchors.bottom: parent.bottom
                 anchors.bottomMargin: 5
-                text: qsTr("Rules")
+                text: qsTr("Rules") + mytrans.emptyString
                 color: "white"
                 font.pixelSize: 20
                 font.family: "Impact"
@@ -93,7 +93,7 @@ Rectangle {
                 anchors.horizontalCenter: standartsIcon.horizontalCenter
                 anchors.bottom: parent.bottom
                 anchors.bottomMargin: 5
-                text: qsTr("Standarts")
+                text: qsTr("Standarts") + mytrans.emptyString
                 color: "white"
                 font.pixelSize: 20
                 font.family: "Impact"

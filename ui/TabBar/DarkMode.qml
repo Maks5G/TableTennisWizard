@@ -11,8 +11,8 @@ Rectangle{
     height: darkModeColumn.height + 10
     color: mediumColor
 
-    RowLayout{
-        spacing: -5
+//    RowLayout{
+//        spacing: -5
 
         ColumnLayout{
             id: darkModeColumn
@@ -40,7 +40,7 @@ Rectangle{
             }
             Text {
                 id: txt
-                text: qsTr("Dark Mode")
+                text: qsTr("Dark Mode") + mytrans.emptyString
                 color: "white"
                 Layout.alignment: Qt.AlignHCenter
                 font.family: "Impact"
@@ -50,8 +50,10 @@ Rectangle{
             source: "qrc:/ui/assets/moon2.png"
             fillMode: Image.PreserveAspectFit
             scale: 0.8
+            anchors.left: darkModeColumn.right
+            anchors.leftMargin: ukrainianOn ? -11 : 0
         }
-    }
+//    }
 }
 
 

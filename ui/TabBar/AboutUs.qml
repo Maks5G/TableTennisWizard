@@ -21,7 +21,7 @@ Rectangle{
         anchors.horizontalCenter: aboutUsIcon.horizontalCenter
         anchors.bottom: parent.bottom
         anchors.bottomMargin: 5
-        text: "About Us"
+        text: qsTr("About Us") + mytrans.emptyString
         color: "white"
         font.pixelSize: 20
         font.family: "Impact"
@@ -39,7 +39,7 @@ Rectangle{
     //Window AboutUs (I wanted Dialog Window but it has only a few properties)
     Window{
         id: aboutUs
-        title: "About Us"
+        title: qsTr("About Us") + mytrans.emptyString
         color: "#feccd9"
         height: 900
         width: 1280
@@ -94,10 +94,10 @@ Rectangle{
 
         Text {
             id: dialogText
-            text: qsTr("My first application is devoted to my dear friends <br>with whom I learned to play table tennis!")
+            text: qsTr("My first application is devoted to my dear friends <br>with whom I learned to play table tennis!") + mytrans.emptyString
             anchors.top: ourImage.bottom
             anchors.horizontalCenter: ourImage.horizontalCenter
-            font.family: "Viner Hand ITC"
+            font.family: "ScriptS"
             font.pointSize: 19
             anchors.margins: 10
         }

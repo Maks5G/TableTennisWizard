@@ -35,11 +35,11 @@ Page{
 
         ListModel{
             id: lModel
-            ListElement {title: qsTr("Right Axe");}
-            ListElement {title: qsTr("Left Axe");}
-            ListElement {title: qsTr("Fan");}
-            ListElement {title: qsTr("Pendulum");}
-            ListElement {title: qsTr("Reverse Side Rotation");}
+            ListElement {title: qsTr("Right Axe"); nativeName: "Right Axe"}
+            ListElement {title: qsTr("Left Axe"); nativeName: "Left Axe"}
+            ListElement {title: qsTr("Fan"); nativeName: "Fan"}
+            ListElement {title: qsTr("Pendulum"); nativeName: "Pendulum"}
+            ListElement {title: qsTr("Reverse Side Rotation"); nativeName: "Reverse Side Rotation"}
         }
 
         BallParticles{
@@ -76,6 +76,7 @@ Page{
         ComboBox{
             id: cmbx
             textRole: "title"
+            valueRole: "nativeName"
             x: 10
             width: 200
             model: lModel
@@ -88,12 +89,15 @@ Page{
 
             onCurrentTextChanged: {
                 mainText.text = qsTr(currentIndex + 1 + " - " + currentText);
-                img.source = "ServeAssets/" + currentText + ".gif";
+
                 myFile.setSource(":/ui/MidArea/ServeArea/ServeTexts/" + currentText + ".txt") // FileIO .cpp and .h are not in this directory
-                secondText.text = qsTr(myFile.read())
+                secondText.text = myFile.read()
 
                 scrlView.contentHeight = (img.height + mainText.height + secondText.height) + 250
                 scrlView.contentWidth = secondText.width * 1.5
+            }
+            onCurrentValueChanged: {
+                img.source = "ServeAssets/" + currentValue + ".gif";
             }
         }
     }

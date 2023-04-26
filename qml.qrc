@@ -55,5 +55,25 @@
         <file>ui/assets/AboutUs.jpg</file>
         <file>ui/assets/TableTennisWizard Icon.png</file>
         <file>ui/assets/white single petal.png</file>
+        <file>translator/ukrainian.qm</file>
+        <file>translator/ukrainian.ts</file>
+        <file>ChangeLanguage.qml</file>
+        <file>ui/assets/uk-icon.png</file>
+        <file>ui/assets/ukraine-icon.png</file>
+        <file>ui/MidArea/ServeArea/ServeTexts/Віяло.txt</file>
+        <file>ui/MidArea/ServeArea/ServeTexts/Зворотна бокова крутка.txt</file>
+        <file>ui/MidArea/ServeArea/ServeTexts/Ліва Сокира.txt</file>
+        <file>ui/MidArea/ServeArea/ServeTexts/Маятник.txt</file>
+        <file>ui/MidArea/ServeArea/ServeTexts/Права Сокира.txt</file>
+        <file>ui/MidArea/RulesArea/RulesTexts/Вимоги до обладнання для тенісу.txt</file>
+        <file>ui/MidArea/RulesArea/RulesTexts/Інші часті випадки гри на рахунок.txt</file>
+        <file>ui/MidArea/RulesArea/RulesTexts/Правила розминки перед зустріччю.txt</file>
+        <file>ui/MidArea/RulesArea/RulesTexts/Скільки сетів треба грати.txt</file>
+        <file>ui/MidArea/RulesArea/RulesTexts/Як довго грати в гру.txt</file>
+        <file>ui/MidArea/RulesArea/RulesTexts/Як подавати.txt</file>
+        <file>ui/MidArea/StandartsArea/StandartsTexts/Кімната.txt</file>
+        <file>ui/MidArea/StandartsArea/StandartsTexts/М'яч.txt</file>
+        <file>ui/MidArea/StandartsArea/StandartsTexts/Ракетка.txt</file>
+        <file>ui/MidArea/StandartsArea/StandartsTexts/Стіл.txt</file>
     </qresource>
 </RCC>

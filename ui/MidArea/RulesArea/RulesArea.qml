@@ -35,12 +35,12 @@ Page{
 
         ListModel{
             id: lModel
-            ListElement {title: qsTr("Requirement for table tennis equipment");}
-            ListElement {title: qsTr("Rules for warming up before a meeting");}
-            ListElement {title: qsTr("How long to play a game");}
-            ListElement {title: qsTr("How many games are played");}
-            ListElement {title: qsTr("How to serve");}
-            ListElement {title: qsTr("Other frequent cases on the account game");}
+            ListElement {title: qsTr("Requirement for table tennis equipment"); nativeName: "Requirement for table tennis equipment"}
+            ListElement {title: qsTr("Rules for warming up before a meeting"); nativeName: "Rules for warming up before a meeting"}
+            ListElement {title: qsTr("How long to play a game"); nativeName: "How long to play a game"}
+            ListElement {title: qsTr("How many games are played"); nativeName: "How many games are played"}
+            ListElement {title: qsTr("How to serve"); nativeName: "How to serve"}
+            ListElement {title: qsTr("Other frequent cases on the account game"); nativeName: "Other frequent cases on the account game"}
         }
 
         BallParticles{
@@ -77,6 +77,7 @@ Page{
         ComboBox{
             id: cmbx
             textRole: "title"
+            valueRole: "nativeName"
             x: 10
             width: 300
             model: lModel
@@ -89,12 +90,15 @@ Page{
 
             onCurrentTextChanged: {
                 mainText.text = qsTr(currentIndex + 1 + " - " + currentText);
-                img.source = "RulesAssets/" + currentText + ".jpg";
+
                 myFile.setSource(":/ui/MidArea/RulesArea/RulesTexts/" + currentText + ".txt"); // FileIO .cpp and .h are not in this directory
-                secondText.text = qsTr(myFile.read());
+                secondText.text = myFile.read();
 
                 scrlView.contentHeight = (img.height + mainText.height + secondText.height) + 250
                 scrlView.contentWidth = secondText.width * 1.5
+            }
+            onCurrentValueChanged: {
+                img.source = "RulesAssets/" + currentValue + ".jpg";
             }
         }
     }

@@ -11,6 +11,7 @@ Window {
     property string textColor: "black"
     property string activeFocusColor: "#C04000"
     property bool darkOn: true // for color animation
+    property bool ukrainianOn: false // for DarkMode image
 
     id: mainWindow
     width: 1600
@@ -31,6 +32,10 @@ Window {
             anchors.fill: parent
             source: "qrc:/ui/MidArea/StartScreen/StartScreen.qml"
         }
+    }
+
+    ChangeLanguage {
+        id: language
     }
 
     //Animating theme changing

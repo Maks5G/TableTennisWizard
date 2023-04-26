@@ -35,10 +35,10 @@ Page{
 
         ListModel{
             id: lModel
-            ListElement {title: qsTr("Table");}
-            ListElement {title: qsTr("Room");}
-            ListElement {title: qsTr("Racket");}
-            ListElement {title: qsTr("Ball");}
+            ListElement {title: qsTr("Table"); nativeName: "Table"}
+            ListElement {title: qsTr("Room"); nativeName: "Room"}
+            ListElement {title: qsTr("Racket"); nativeName: "Racket"}
+            ListElement {title: qsTr("Ball"); nativeName: "Ball"}
         }
 
         BallParticles{
@@ -74,6 +74,7 @@ Page{
         ComboBox{
             id: cmbx
             textRole: "title"
+            valueRole: "nativeName"
             x: 10
             width: 100
             model: lModel
@@ -85,13 +86,15 @@ Page{
             }
 
             onCurrentTextChanged: {
-                mainText.text = qsTr(currentIndex + 1 + " - " + currentText);
-                img.source = "StandartsAssets/" + currentText + ".jpg";
+                mainText.text = qsTr(currentIndex + 1 + " - " + currentText) + mytrans.emptyString;
                 myFile.setSource(":/ui/MidArea/StandartsArea/StandartsTexts/" + currentText + ".txt"); // FileIO .cpp and .h are not in this directory
-                secondText.text = qsTr(myFile.read());
+                secondText.text = myFile.read();
 
                 scrlView.contentHeight = (img.height + mainText.height + secondText.height) + 250
                 scrlView.contentWidth = secondText.width * 1.5
+            }
+            onCurrentValueChanged: {
+                img.source = "StandartsAssets/" + currentValue + ".jpg";
             }
         }
     }

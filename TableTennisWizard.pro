@@ -12,6 +12,8 @@ SOURCES += \
 
 RESOURCES += qml.qrc
 
+TRANSLATIONS = translator/ukrainian.ts
+
 # Additional import path used to resolve QML modules in Qt Creator's code model
 QML_IMPORT_PATH =
 
@@ -35,4 +37,6 @@ DISTFILES += \
     ui/assets/serve.png
 
 HEADERS += \
-    fileio.h
+    fileio.h \
+    mylang.h \
+    mytranslator.h

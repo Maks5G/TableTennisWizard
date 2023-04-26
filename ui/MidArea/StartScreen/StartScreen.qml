@@ -5,9 +5,10 @@ import "../../MidArea"
 
 Page {
     id: mainPage
+    anchors.fill: parent
     background: Rectangle{color: lightColor}
-    property real relativeMainTextHeight: 17.9 // for proper scaling
-    property real relativeSecondTextHeight: 27.5// for proper scaling
+    property real relativeMainTextHeight: 22.375 // for proper scaling
+    property real relativeSecondTextHeight: 51.14// for proper scaling
     property real relativeImgWidth: 8.95// for proper scaling
 
     ScrollView{
@@ -15,30 +16,34 @@ Page {
         anchors.fill: parent
         contentWidth: 1790
         contentHeight: 1080
-        ColumnLayout {
-            id: startColumn
-            anchors.centerIn: parent
-            width: secondText.width
+        clip: true
+//        ColumnLayout {
+//            id: startColumn
+//            anchors.centerIn: parent
+//            width: secondText.width
             Text {
                 id: mainText
-                text: qsTr("Hello!")
-                font.family: "Vladimir Script"
-                font.pointSize: 100
+                text: qsTr("Hello!") + mytrans.emptyString
+                font.family: "ScriptS"
+                font.pointSize: 80
                 color: textColor
-                Layout.alignment: Qt.AlignHCenter
+//                Layout.alignment: Qt.AlignHCenter
+                anchors.bottom: parent.verticalCenter
+                anchors.horizontalCenter: parent.horizontalCenter
 
             }
-            TextArea {
+            Text {
                 id: secondText
-                readOnly: true
-                wrapMode: TextEdit.Wrap
-                text: qsTr("Welcome to Table Tennis Wizard!!!\nClick on the tabbar to start")
-                font.family: "Vladimir Script"
-                font.pointSize: 65
+                text: qsTr("Welcome to Table Tennis Wizard!!!") + mytrans.emptyString + "<br>" +
+                      qsTr("Click on the tabbar to start") + mytrans.emptyString
+                font.family: "ScriptS"
+                font.pointSize: 35
                 color: textColor
-                Layout.alignment: Qt.AlignHCenter
+                anchors.top: mainText.bottom
+                anchors.horizontalCenter: parent.horizontalCenter
+//                Layout.alignment: Qt.AlignHCenter
             }
-        }
+//        }
         //arrow to help user start using program
         Image {
             id: img
