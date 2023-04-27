@@ -22,3 +22,30 @@ https://gifrun.com/ : for gif images
 https://www.flaticon.com/ : for icons, many authors, can't remember them all.
 
 ------------------------------------------------------
+
+Ця програма реалізує:
+1) Вертикальна панель вкладок
+2) Зміна теми програми на темну з анімацією
+3) Model-View представлення
+4) Анімація частинок
+5) Масштабування контенту
+6) Зміна мови програми з англійської на україніську і навпаки
+7) Зчитування .txt файлів
+8) Практично весь базовий синтаксис QML/JS
+9) Реагування розміру контенту на зміну ширини вікна
+10) Вся додаткова реалізація, яка випливає із вище перечислених
+
+------------------------------------------------------
+
+This program implements:
+1) Vertical tab bar
+2) Change the program theme to dark with animation
+3) Model-View view
+4) Particle animation
+5) Content scaling
+6) Change the program language from English to Ukrainian and vice versa
+7) Reading .txt files
+8) Almost all basic QML/JS syntax
+9) Content size response to window width changes
+10) All additional implementation that follows from the above
+
