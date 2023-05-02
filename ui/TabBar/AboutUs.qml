@@ -145,7 +145,5 @@ Rectangle{
                 aboutUs.close()
             }
         }
-
     }
-
 }

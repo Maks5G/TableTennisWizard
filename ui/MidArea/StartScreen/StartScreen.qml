@@ -17,33 +17,26 @@ Page {
         contentWidth: 1790
         contentHeight: 1080
         clip: true
-//        ColumnLayout {
-//            id: startColumn
-//            anchors.centerIn: parent
-//            width: secondText.width
-            Text {
-                id: mainText
-                text: qsTr("Hello!") + mytrans.emptyString
-                font.family: "ScriptS"
-                font.pointSize: 80
-                color: textColor
-//                Layout.alignment: Qt.AlignHCenter
-                anchors.bottom: parent.verticalCenter
-                anchors.horizontalCenter: parent.horizontalCenter
+        Text {
+            id: mainText
+            text: qsTr("Hello!") + mytrans.emptyString
+            font.family: "ScriptS"
+            font.pointSize: 80
+            color: textColor
+            anchors.bottom: parent.verticalCenter
+            anchors.horizontalCenter: parent.horizontalCenter
 
-            }
-            Text {
-                id: secondText
-                text: qsTr("Welcome to Table Tennis Wizard!!!") + mytrans.emptyString + "<br>" +
-                      qsTr("Click on the tabbar to start") + mytrans.emptyString
-                font.family: "ScriptS"
-                font.pointSize: 35
-                color: textColor
-                anchors.top: mainText.bottom
-                anchors.horizontalCenter: parent.horizontalCenter
-//                Layout.alignment: Qt.AlignHCenter
-            }
-//        }
+        }
+        Text {
+            id: secondText
+            text: qsTr("Welcome to Table Tennis Wizard!!!") + mytrans.emptyString + "<br>" +
+                  qsTr("Click on the tabbar to start") + mytrans.emptyString
+            font.family: "ScriptS"
+            font.pointSize: 35
+            color: textColor
+            anchors.top: mainText.bottom
+            anchors.horizontalCenter: parent.horizontalCenter
+        }
         //arrow to help user start using program
         Image {
             id: img
